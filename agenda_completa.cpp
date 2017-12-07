@@ -35,7 +35,7 @@ void inclusao(void){
 
      if ((fp = fopen("agenda.db", "a")) == NULL)
      {
-        printf ("O arquivo da lista n„o pode ser aberto!\n");
+        printf ("O arquivo da lista n√£o pode ser aberto!\n");
         printf ("Insira dados!\n");
         getch();
         exit(1);
@@ -122,7 +122,7 @@ void pesquisar(void){
      char nome[80],op;
 
      if ((fp = fopen("agenda.db", "r")) == NULL){
-     printf ("O arquivo da lista n„o pode ser aberto!\n");
+     printf ("O arquivo da lista n√£o pode ser aberto!\n");
      printf ("Insira dados!\n");
      getch();
      exit(1);
@@ -155,7 +155,7 @@ void pesquisarfone(void){
      char fone[80],op;
 
      if ((fp = fopen("agenda.db", "r")) == NULL){
-     printf ("O arquivo da lista n„o pode ser aberto!\n");
+     printf ("O arquivo da lista n√£o pode ser aberto!\n");
      printf ("Insira dados!\n");
      getch();
      exit(1);
@@ -188,7 +188,7 @@ void pesquisaremail(void){
      char email[80],op;
 
      if ((fp = fopen("agenda.db", "r")) == NULL){
-     printf ("O arquivo da lista n„o pode ser aberto!\n");
+     printf ("O arquivo da lista n√£o pode ser aberto!\n");
      printf ("Insira dados!\n");
      getch();
      exit(1);
@@ -221,7 +221,7 @@ int i = 0, retorno;
 
     if ((fp = fopen("agenda.db", "r")) == NULL)
     {
-    printf ("O arquivo da lista n„o pode ser aberto!\n");
+    printf ("O arquivo da lista n√£o pode ser aberto!\n");
     printf ("Insira dados!\n");
     getch();
     exit(1);

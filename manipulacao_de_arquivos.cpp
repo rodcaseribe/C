@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /*
-Outras Funções para manupulação de arquivos
+Outras FunÃ§Ãµes para manupulaÃ§Ã£o de arquivos
 
 FPUTC - Grava 1 Caracter no arquivo
-FGETC - Lê 1 Caracter do arquivo
+FGETC - LÃª 1 Caracter do arquivo
 
-FPUTS - Grava uma sequência de Caracteres no arquivo
-FGETS - Lê uma sequência de Caracteres do arquivo
+FPUTS - Grava uma sequÃªncia de Caracteres no arquivo
+FGETS - LÃª uma sequÃªncia de Caracteres do arquivo
 
 FWRITE - Grava certa quantidade de bytes no arquivo
-FREAD - Lê certa quantidade de bytes do arquivo
+FREAD - LÃª certa quantidade de bytes do arquivo
 
 www.cplusplus.com/reference/
 
@@ -23,11 +23,11 @@ int main(){
     int valor;
     FILE *arquivo;
 
-    arquivo = fopen("teste.txt","wt"); //wt = Gravação
+    arquivo = fopen("teste.txt","wt"); //wt = GravaÃ§Ã£o
                                        //rt = Leitura
                                        //a  = append
 
-    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontará para NULL
+    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontarÃ¡ para NULL
         printf("Nao foi possivel abrir o arquivo");
         exit(0);
     }
@@ -36,11 +36,11 @@ int main(){
 
     fclose(arquivo);
 
-    arquivo = fopen("teste.txt","rt"); //wt = Gravação
+    arquivo = fopen("teste.txt","rt"); //wt = GravaÃ§Ã£o
                                        //rt = Leitura
                                        //a  = append
 
-    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontará para NULL
+    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontarÃ¡ para NULL
         printf("Nao foi possivel abrir o arquivo");
         exit(0);
     }

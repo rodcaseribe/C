@@ -14,7 +14,7 @@ FILE* AbreArquivo(char modo, char caminho[30]){
             arquivo = fopen(caminho,"a");
             break;
     }
-    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontar· para NULL
+    if(arquivo==NULL){      //Se houver algum erro, o ponteiro apontar√° para NULL
         printf("Nao foi possivel abrir o arquivo");
         exit(0);
     }

@@ -6,7 +6,7 @@ int quadrado(int valor){ //tem retorno
     return valor;
 }
 
-void quadradoimprime(int valor){ //n„o tem retorno
+void quadradoimprime(int valor){ //n√£o tem retorno
     valor=valor*valor;
     printf("\n\nQuadrado Imprime: %d\n\n", valor);
 

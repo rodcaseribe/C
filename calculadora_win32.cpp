@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
  
-//ID´s
+//IDÂ´s
 enum {ID_LABEL, ID_EDIT, ID_BOTONIGUAL, ID_BOTONRESET, ID_BOTONRESET2, ID_BOTONSUMAR, ID_BOTONRESTAR, ID_BOTONMULTIPLICAR, ID_BOTONDIVIDIR, ID_BOTONPORCENTAJE, ID_BOTONPOTENCIA, ID_BOTONRAIZ, ID_BOTONPI, ID_BOTONCOMA, ID_BOTONSIGNO, ID_BOTONCERO, ID_BOTON1, ID_BOTON2, ID_BOTON3, ID_BOTON4, ID_BOTON5, ID_BOTON6, ID_BOTON7, ID_BOTON8, ID_BOTON9};
  
  
@@ -157,7 +157,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
             botonMultiplicar = CreateWindow ("Button", "*", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 165, 150, 40, 25, hwnd, (HMENU) ID_BOTONMULTIPLICAR, estancia, 0);
             botonDividir = CreateWindow ("Button", "/", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 165, 180, 40, 25, hwnd, (HMENU) ID_BOTONDIVIDIR, estancia, 0);
             botonPorcentaje = CreateWindow ("Button", "%", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 90, 40, 25, hwnd, (HMENU) ID_BOTONPORCENTAJE, estancia, 0);
-            botonPotencia = CreateWindow ("Button", "x ²", BS_ICON | BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 120, 40, 25, hwnd, (HMENU) ID_BOTONPOTENCIA, estancia, 0);
+            botonPotencia = CreateWindow ("Button", "x Â²", BS_ICON | BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 120, 40, 25, hwnd, (HMENU) ID_BOTONPOTENCIA, estancia, 0);
             botonRaiz = CreateWindow ("Button", "Raiz", BS_ICON | BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 150, 40, 25, hwnd, (HMENU) ID_BOTONRAIZ, estancia, 0);
             botonPi = CreateWindow ("Button", "Pi", BS_ICON | BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 210, 180, 40, 25, hwnd, (HMENU) ID_BOTONPI, estancia, 0);
             botonIgual = CreateWindow ("Button", "=", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 20, 220, 40, 25, hwnd, (HMENU) ID_BOTONIGUAL, estancia, 0);
@@ -179,7 +179,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
             SetWindowLong(hwnd, GWL_STYLE, (DWORD)dwStyle);
             RedrawWindow(hwnd, NULL, NULL, RDW_INVALIDATE | RDW_FRAME | RDW_ERASENOW);
  
-            //Bloquear la opcion de cambiarle el tamaño a la ventana
+            //Bloquear la opcion de cambiarle el tamaÃ±o a la ventana
             dwStyle &= ~WS_SIZEBOX;
             SetWindowLong(hwnd, GWL_STYLE, (DWORD)dwStyle);
             RedrawWindow(hwnd, NULL, NULL, RDW_INVALIDATE | RDW_FRAME | RDW_ERASENOW);
@@ -244,7 +244,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                     GetWindowText (edit, cadenaEditMain, 30);        //Se obtiene lo que hay en el edit y se guarda en "CadenaEditMain"
                     if (strstr (cadenaEditMain, ".") == NULL)        //Analizamos "cadenaEditMain" y si no posee una coma se ejecuta lo que hay dentro del if (en caso de que ya tenga una coma no hace nada)
                     {
-                        strcat (cadenaEditMain, ".");                //Se le añade una coma a lo que hay en "CadenaEditMain"
+                        strcat (cadenaEditMain, ".");                //Se le aÃ±ade una coma a lo que hay en "CadenaEditMain"
                         SetWindowText (edit, cadenaEditMain);        //Se imprime el nuevo numero en el edit
                     }
                     break;
@@ -304,7 +304,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                     GetWindowText (edit, cadenaEditMain, 30);
                     primer_num = atof (cadenaEditMain);
                     SetWindowText (edit, "");
-                    SetWindowText (label, "¿A cuánto está elevado el número?");
+                    SetWindowText (label, "Â¿A cuÃ¡nto estÃ¡ elevado el nÃºmero?");
                     break;
                 }
                 case ID_BOTONRAIZ:
@@ -313,7 +313,7 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                     GetWindowText (edit, cadenaEditMain, 30);
                     primer_num = atof (cadenaEditMain);
                     SetWindowText (edit, "");
-                    SetWindowText (label, "¿A cuánto está elevada la raiz?");
+                    SetWindowText (label, "Â¿A cuÃ¡nto estÃ¡ elevada la raiz?");
                     break;
                 }
                 case ID_BOTONPI:

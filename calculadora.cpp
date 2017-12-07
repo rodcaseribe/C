@@ -12,7 +12,7 @@ int main(){
     setbuf(stdin, NULL);
 
     //NULL =  NULO
-    //STDIN STANDARD INPUT   >  ENTRADA PADR√O  -  TECLADO
+    //STDIN STANDARD INPUT   >  ENTRADA PADR√ÉO  -  TECLADO
 
     //COLOCANDO NO BUFFER DO TECLADO O VALOR NULO
 
@@ -47,9 +47,9 @@ int main(){
     }
 
 
-    //== È para comparaÁ„o
+    //== √© para compara√ß√£o
 
-    // = È para atribuiÁ„o
+    // = √© para atribui√ß√£o
 
     printf("O Resultado da operacao e: %d", resultado);
 
